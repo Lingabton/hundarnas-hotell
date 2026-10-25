@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hundarnas Hotell — Hundpassning i Lillån/Bettorp, Örebro</title>
+<meta name="description" content="Hundarnas Hotell — hundpassning, promenader och mer i Lillån/Bettorp, Örebro. Darci och Grace tar hand om din hund!">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    color: #2a2a3a;
+    background: #eef3fa;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  /* Header */
+  header {
+    background: #f8d0dc;
+    text-align: center;
+    padding: 2rem 1rem 1.5rem;
+  }
+  header img {
+    width: 160px;
+    height: auto;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.15));
+  }
+  header h1 {
+    font-size: 2.2rem;
+    color: #7a2040;
+    margin-top: 0.5rem;
+    letter-spacing: -0.02em;
+  }
+  header p {
+    color: #2b4c7e;
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-top: 0.2rem;
+  }
+
+  /* About */
+  .about-section {
+    text-align: center;
+    padding: 1.8rem 1.2rem 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .about-section img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #7a2040;
+    margin-bottom: 1rem;
+  }
+  .about-section h2 {
+    color: #2b4c7e;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+  .about-section p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  /* Services */
+  .services-heading {
+    padding: 1rem 1.2rem 0;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .services-heading h2 {
+    color: #2b4c7e;
+    font-size: 1.4rem;
+  }
+  .services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem;
+    padding: 0.7rem 1.2rem 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .service-box {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.2rem 0.8rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  .service-box .icon { font-size: 1.8rem; margin-bottom: 0.3rem; }
+  .service-box.wide { grid-column: 1 / -1; }
+
+  /* Prices */
+  .price-banner {
+    background: #7a2040;
+    color: white;
+    border-radius: 1.2rem;
+    padding: 1.5rem 1.2rem;
+    margin: 1rem 1.2rem;
+    max-width: 576px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .price-banner h2 {
+    color: #f8d0dc;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+  .price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    font-size: 1rem;
+  }
+  .price-row:last-child { border-bottom: none; }
+  .price-row .kr {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #f8d0dc;
+  }
+
+  /* Area */
+  .area-box {
+    background: #2b4c7e;
+    color: white;
+    border-radius: 1.2rem;
+    padding: 1.5rem;
+    margin: 1rem 1.2rem;
+    max-width: 576px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1.05rem;
+    line-height: 1.5;
+  }
+  .area-box h2 {
+    color: #f8d0dc;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Contact */
+  .cta-section {
+    text-align: center;
+    padding: 2rem 1.2rem 2.5rem;
+  }
+  .cta-section p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .cta-section a {
+    display: inline-block;
+    background: #2b4c7e;
+    color: white;
+    text-decoration: none;
+    padding: 1.1rem 2.5rem;
+    border-radius: 3rem;
+    font-size: 1.15rem;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(43,76,126,0.3);
+  }
+  @media (hover: hover) {
+    .cta-section a:hover { background: #1a365d; }
+  }
+  .cta-section a:active { transform: scale(0.97); }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.8rem;
+    color: #999;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <img src="images/logo.jpg" alt="Hundarnas Hotell logga — en glad hund i ett gult hus" width="160" height="207">
+  <h1>Hundarnas Hotell</h1>
+  <p>Lillån/Bettorp, Örebro</p>
+</header>
+
+<div class="about-section">
+  <img src="images/draci-grace.jpg" alt="Darci och Grace" width="130" height="130">
+  <h2>Hej! Vi är Darci och Grace</h2>
+  <p>Vi har haft 2 hundar så vi vet hur man tar hand om hundar. Vi älskar hundar för att hundar är söta, smarta och snälla. Vi tar vilken hund som helst. Om dom vill vila så låter vi dom vila. Vi ser till att dom mår bra!</p>
+</div>
+
+<div class="services-heading">
+  <h2>Vad vi gör</h2>
+</div>
+<div class="services-grid">
+  <div class="service-box">
+    <div class="icon">🏡</div>
+    Passar hundar hemma hos oss
+  </div>
+  <div class="service-box">
+    <div class="icon">🎾</div>
+    Leker i trädgården
+  </div>
+  <div class="service-box">
+    <div class="icon">🦮</div>
+    Vi kommer gå på promenad med era hundar
+  </div>
+  <div class="service-box">
+    <div class="icon">🍽</div>
+    Matar dom
+  </div>
+  <div class="service-box wide">
+    <div class="icon">🏠</div>
+    Vi kan komma till er också!
+  </div>
+</div>
+
+<div class="price-banner">
+  <h2>Priser</h2>
+  <div class="price-row">
+    <span>Promenad</span>
+    <span class="kr">30 kr</span>
+  </div>
+  <div class="price-row">
+    <span>Hundpassning, 1 timme</span>
+    <span class="kr">40 kr</span>
+  </div>
+  <div class="price-row">
+    <span>Hundpassning, 1 dag</span>
+    <span class="kr">100 kr</span>
+  </div>
+</div>
+
+<div class="area-box">
+  <h2>Var finns vi?</h2>
+  <p>Vi bor i Lillån/Bettorp i Örebro. Vi kan komma till er om ni bor i närheten!</p>
+</div>
+
+<div class="cta-section">
+  <p>Om ni vill boka tid, skicka ett mejl!</p>
+  <a href="mailto:gabriel.linton@gmail.com?subject=Hundpassning%20-%20Hundarnas%20Hotell">Mejla oss</a>
+</div>
+
+<footer>
+  Hundarnas Hotell &middot; Lillån/Bettorp, Örebro
+</footer>
+
+</body>
+</html>
